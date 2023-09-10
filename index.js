@@ -43,7 +43,7 @@ function handleEvent(event) {
 
   return client.replyMessage(event.replyToken, payload);
 
-}else if (event.message.type==='text' && event.message.text === 'Lock','lock'){
+}else if (event.message.type === 'text' && (event.message.text === 'Lock' || event.message.text === 'lock')){
     const payload ={
       type: "text",
       text: "OK! Already Lock"
@@ -52,7 +52,7 @@ function handleEvent(event) {
   axios.get('https://sgp1.blynk.cloud/external/api/update?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V9=1');
   return client.replyMessage(event.replyToken, payload);
 
-  }else if (event.message.type==='text' && event.message.text === 'Ulock','Ulock'){
+  }else if (event.message.type === 'text' && (event.message.text === 'Ulock' || event.message.text === 'Ulock')){
       const payload ={
         type: "text",
         text: "OK! Already Unlock"
@@ -61,7 +61,7 @@ function handleEvent(event) {
     axios.get('https://sgp1.blynk.cloud/external/api/update?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V9=0');
     return client.replyMessage(event.replyToken, payload);
 
-  }else if (event.message.type==='text' && event.message.text === 'Location','location'){
+  }else if (event.message.type === 'text' && (event.message.text === 'Location' || event.message.text === 'location')){
       const payload ={
         type: "text",
         text: "OK! Location"
@@ -70,7 +70,7 @@ function handleEvent(event) {
     axios.get('https://sgp1.blynk.cloud/external/api/get?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V12');
     return client.replyMessage(event.replyToken, payload);
 
-  }else if (event.message.type==='text' && event.message.text === 'password','Password'){
+  }else if (event.message.type === 'text' && (event.message.text === 'password' || event.message.text === 'Password')){
       const payload ={
         type: "text",
         text: "OK! Password"
@@ -79,7 +79,7 @@ function handleEvent(event) {
     axios.get('https://sgp1.blynk.cloud/external/api/get?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V10');
     return client.replyMessage(event.replyToken, payload);
 
-  }else if (event.message.type==='text' && event.message.text === 'password 2','Password 2','password2','Password2'){
+  }else if (event.message.type === 'text' && (event.message.text === 'password 2' || event.message.text === 'Password 2' || event.message.text === 'password2' || event.message.text === 'Password2')){
       const payload ={
         type: "text",
         text: "OK! Password 2"
