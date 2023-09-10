@@ -52,10 +52,10 @@ function handleEvent(event) {
   axios.get('https://sgp1.blynk.cloud/external/api/update?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V9=1');
   return client.replyMessage(event.replyToken, payload);
 
-  }else if (event.message.type==='text' && event.message.text === 'Lock','lock'){
+  }else if (event.message.type==='text' && event.message.text === 'Ulock','Ulock'){
       const payload ={
         type: "text",
-        text: "OK! Already Unock"
+        text: "OK! Already Unlock"
 
       };
     axios.get('https://sgp1.blynk.cloud/external/api/update?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V9=0');
