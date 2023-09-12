@@ -64,7 +64,7 @@ function handleEvent(event) {
   }else if (event.message.type === 'text' && (event.message.text === 'Location' || event.message.text === 'location')){
       const payload ={
         type: "text",
-        text: "OK! Location"
+        text: "OK! Location Click This https://sgp1.blynk.cloud/external/api/get?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V12"
 
       };
     axios.get('https://sgp1.blynk.cloud/external/api/get?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V12');
@@ -73,7 +73,7 @@ function handleEvent(event) {
   }else if (event.message.type === 'text' && (event.message.text === 'password' || event.message.text === 'Password')){
       const payload ={
         type: "text",
-        text: "OK! Password"
+        text: "OK! Password Click This Link: https://sgp1.blynk.cloud/external/api/get?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V10"
 
       };
     axios.get('https://sgp1.blynk.cloud/external/api/get?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V10');
@@ -82,7 +82,7 @@ function handleEvent(event) {
   }else if (event.message.type === 'text' && (event.message.text === 'password 2' || event.message.text === 'Password 2' || event.message.text === 'password2' || event.message.text === 'Password2')){
       const payload ={
         type: "text",
-        text: "OK! Password 2"
+        text: "OK! Password 2 Click This Link: https://sgp1.blynk.cloud/external/api/get?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V11"
 
       };
     axios.get('https://sgp1.blynk.cloud/external/api/get?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V11');
