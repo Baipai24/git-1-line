@@ -37,8 +37,8 @@ function handleEvent(event) {
   } else if (event.message.type==='text' && (event.message.text === 'Hello' || event.message.text === 'hello')){
     const payload ={
       type: "text",
-      text: "Hello! Please Type The Desired Command                                            Click This Link To View How To Type Command: https://sv1.picz.in.th/images/2023/09/12/dW6feL9.png"
-
+      text: "<img src="https://sv1.picz.in.th/images/2023/09/12/dW6feL9.png" alt="dW6feL9.png" border="0" /> Hello! Please Type The Desired Command                                            Click This Link To View How To Type Command: https://sv1.picz.in.th/images/2023/09/12/dW6feL9.png"
+      text: "<img src="https://sv1.picz.in.th/images/2023/09/12/dW6feL9.png" alt="dW6feL9.png" border="0" />"
     };
 
   return client.replyMessage(event.replyToken, payload);
