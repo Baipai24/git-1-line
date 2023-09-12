@@ -37,7 +37,7 @@ function handleEvent(event) {
   } else if (event.message.type==='text' && (event.message.text === 'Hello' || event.message.text === 'hello')){
     const payload ={
       type: "text",
-      text: "Hello! Please Type The Desired Command                                            Click This Link To View How To Type Command: https://sv1.picz.in.th/images/2023/09/12/dW6feL9.png"
+      text: "Hello! Please Type The Desired Command                                            Click This Link To View How To Type Command: https://sv1.picz.in.th/images/2023/09/12/dW6kF7a.png"
 
     };
 
