@@ -37,7 +37,7 @@ function handleEvent(event) {
   } else if (event.message.type==='text' && (event.message.text === 'Hello' || event.message.text === 'hello')){
     const payload ={
       type: "text",
-      text: "Hello! Please Type The Desired Command                                             'Location = Delivery Robot Location'                                             'Password = Your Delivery Password'                                             (If Password Can't Unlock Please Type 'Password 2')"
+      text: "Hello! Please Type The Desired Command"
 
     };
 
