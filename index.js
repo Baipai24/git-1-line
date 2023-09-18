@@ -49,7 +49,7 @@ function handleEvent(event) {
       text: "OK! Already Lock"
 
     };
-  axios.get('https://sgp1.blynk.cloud/external/api/update?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V9=1');
+  axios.get('https://sgp1.blynk.cloud/external/api/update?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V9=0');
   return client.replyMessage(event.replyToken, payload);
 
   }else if (event.message.type === 'text' && (event.message.text === 'Unlock' || event.message.text === 'unlock')){
@@ -58,7 +58,7 @@ function handleEvent(event) {
         text: "OK! Already Unlock"
 
       };
-    axios.get('https://sgp1.blynk.cloud/external/api/update?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V9=0');
+    axios.get('https://sgp1.blynk.cloud/external/api/update?token=5-x1HiDMdSif4WwR6jFWe_eIhstFs13_&V9=1');
     return client.replyMessage(event.replyToken, payload);
 
   }else if (event.message.type === 'text' && (event.message.text === 'Location' || event.message.text === 'location')){
